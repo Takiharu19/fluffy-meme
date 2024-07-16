@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FC } from "react";
+import Api from "./thread.tsx";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-  
-  return (
-    <>
-
-    </>
+const App: FC = () => {
+  return(
+    <div>
+      <h1>掲示板</h1>
+      <Api />
+    </div>
   )
 }
-
-export default App
+export default App;
